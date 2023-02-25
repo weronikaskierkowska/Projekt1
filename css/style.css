@@ -13,41 +13,36 @@
 /* nav */
 
 nav {
-	width: 100%;
 	height: 50px;
 	background-color: #4e4e4e;
 	color: white;
 }
 
-ul {
+.nav {
 	height: 50px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 }
 
 li {
 	list-style-type: none;
-	margin: 0 13px;
+	display: inline;
+	padding-left: 10px;
 }
+
 li a {
 	color: white;
 	text-decoration: none;
 }
-.nav-brand-name {
-	height: 29px;
-	width: 88px;
-	position: absolute;
-	top: 15px;
-}
 
-.kontakt a {
+.contact a {
 	cursor: not-allowed;
 }
 
 /* header */
 
-.header-img {
+header {
 	height: calc(100vh - 50px);
 	background-image: url('../img/Tło-sekcji.png');
 	background-position: center;
@@ -78,9 +73,10 @@ li a {
 }
 .header-button {
 	background-color: rgba(255, 255, 255, 0);
-	width: 164px;
-	height: 41px;
+	padding: 15px 25px;
+	width: 20%;
 	border: 3px solid white;
+	text-decoration: none;
 	color: white;
 	text-align: center;
 	padding: 8px;
@@ -93,16 +89,17 @@ li a {
 
 /* main */
 .our-specjalists {
-	margin-top: 50px;
+	padding: 50px 0;
+}
+.our-specjalists h2 {
+	margin-bottom: 20px;
 }
 .bold-text {
 	font-weight: bold;
 }
 .specjalist {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	margin: 50px 0px;
 }
 .first-specjalist-img {
 	background-image: url('../img/kobieta1.jfif');
@@ -138,13 +135,12 @@ li a {
 .offer-h2 {
 	color: white;
 	font-size: 36px;
-	margin-top: 50px;
 	margin-bottom: 82px;
 }
 .offer-grid-container {
 	width: 720px;
 	height: 450px;
-	margin: 50px auto;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	grid-template-rows: 50% 50%;
@@ -191,7 +187,6 @@ li a {
 	color: white;
 	height: 100%;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
